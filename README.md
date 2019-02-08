@@ -106,4 +106,4 @@ npm run build
 For detailed explanation on how Vue works, check out the [guide](https://cli.vuejs.org/guide/) and [docs for vue-loader](https://cli.vuejs.org/config/#css-loaderoptions).
 
 ## Credits
-This project makes use of the [Datamuse API](http://www.datamuse.com/api/), which is a wonderful, free API service that you should support.
+This project makes use of the [Datamuse API](http://www.datamuse.com/api/), which is a wonderful, free API service that you should support.# wats4030-capstone
