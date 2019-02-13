@@ -1,5 +1,5 @@
 <template>
-  <div class="rhymesaurus">
+  <div class="yodaspeak">
     <form><!-- TODO: Use a submit event handler to allow the findWords method to handle this form submission. -->
       <p>Find rhymes for <input type="text" v-model="rhyme"> related to <input type="text" v-model="phrase"> <button type="submit">Search</button></p>
     </form>
@@ -32,7 +32,7 @@
 // TODO: Import axios properly here.
 
 export default {
-  name: 'Rhymesaurus',
+  name: 'Yodaspeak',
   data () {
     return {
       results: null,
