@@ -1,9 +1,9 @@
 <template>
   <div class="yodaspeak">
+    <!-- added router links -->
     <p>
       <router-link v-bind:to="'/'">YodaSpeak</router-link>
     </p>
-    <!-- added router links -->
 
     <form v-on:submit.prevent="translate">
       <p>Type your text below to convert to Yodaspeak <input type="text" v-model="results"><button type="submit">Translate</button></p>
@@ -22,7 +22,9 @@ export default {
   name: 'Yodaspeak',
   data () {
     return {
-      results: '',
+      translated: '',
+      text: '',
+      translation: 'yoda'
     }
   },
 
@@ -31,7 +33,7 @@ export default {
       console.log("May The Force Be With You")
       axios.get('https://api.funtranslations.com/translate/yoda.json',{
         params: {
-          text: ''
+          text: this.results
         }
       });
     }
