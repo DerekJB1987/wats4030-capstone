@@ -5,16 +5,13 @@
     </p>
     <!-- added router links -->
 
-    <form v-on:submit="translate">
-      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
+    <form v-on:submit.prevent="translate">
+      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="results"><button type="submit">Translate</button></p>
     </form>
 
-    <ul v-if="results && results.length > 0" class="results">
-      <li v-for="item of results" class="item">
-        <p><strong>{{item.word}}</strong></p>
-        <p>{{item.score}}</p>
-      </li>
-    </ul>
+    <div class = "results-container">
+      <ul v-if="results" class="results"></ul>
+    </div>
   </div>
 </template>
 
