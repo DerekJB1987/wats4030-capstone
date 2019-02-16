@@ -6,7 +6,7 @@
     </p>
 
     <form v-on:submit.prevent="translate">
-      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="results"><button type="submit">Translate</button></p>
+      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
     </form>
 
     <div class = "results-container">
@@ -24,7 +24,9 @@ export default {
     return {
       translated: '',
       text: '',
-      translation: 'yoda'
+      translation: 'yoda',
+      results: null,
+      errors: []
     }
   },
 
@@ -35,6 +37,12 @@ export default {
         params: {
           text: this.results
         }
+      })
+      .then(response => {
+        this.results = response.data;
+      })
+      .catch(error => {
+        this.errors.push(error);
       });
     }
   }
