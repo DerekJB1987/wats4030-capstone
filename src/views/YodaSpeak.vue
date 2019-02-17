@@ -22,8 +22,8 @@ export default {
   name: 'Yodaspeak',
   data () {
     return {
-      translated: '',
-      text: '',
+      translated: 'Lost a planet,  master luke has',
+      text: 'Master luke has lost a planet',
       translation: 'yoda',
       results: null,
       errors: []
