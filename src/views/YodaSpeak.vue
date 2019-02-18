@@ -35,7 +35,7 @@ export default {
       console.log("May The Force Be With You")
       axios.get('https://api.funtranslations.com/translate/yoda.json',{
         params: {
-          text: this.results
+          text: this.text
         }
       })
       .then(response => {
