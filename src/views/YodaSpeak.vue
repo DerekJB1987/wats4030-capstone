@@ -9,9 +9,11 @@
       <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
     </form>
 
-    <div class = "results-container">
-      <ul v-if="results" class="results"></ul>
-    </div>
+      <ul v-if="results" class="results">
+        <li v-for="item in results.list" class="item">
+          <p>{{item.word}}</p>
+        </li>
+      </ul>
   </div>
 </template>
 
@@ -22,9 +24,9 @@ export default {
   name: 'Yodaspeak',
   data () {
     return {
-      translated: 'Lost a planet,  master luke has',
-      text: 'Master luke has lost a planet',
-      translation: 'yoda',
+      translated: "Master Luke has lost a planet",
+      text: "Loast a planet, master Luke has",
+      translation: "yoda",
       results: null,
       errors: []
     }
@@ -38,6 +40,9 @@ export default {
           text: this.text
         }
       })
+      translate: function (contents) {
+        this.results = null;
+      }
       .then(response => {
         this.results = response.data;
       })
