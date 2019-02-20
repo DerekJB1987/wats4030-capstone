@@ -11,9 +11,12 @@
 
       <ul v-if="results" class="results">
         <li v-for="item in results.list" class="item">
-          <p>{{item.word}}</p>
+          <p>{{results.contents.translated}}</p>
         </li>
       </ul>
+
+    <!-- <div>{{results.contents.translated}}</div> -->
+
   </div>
 </template>
 
@@ -25,7 +28,7 @@ export default {
   data () {
     return {
       translated: "Master Luke has lost a planet",
-      text: "Loast a planet, master Luke has",
+      text: "Lost a planet, master Luke has",
       translation: "yoda",
       results: null,
       errors: []
@@ -40,11 +43,9 @@ export default {
           text: this.text
         }
       })
-      translate: function (contents) {
-        this.results = null;
-      }
       .then(response => {
         this.results = response.data;
+        console.log(this.results)
       })
       .catch(error => {
         this.errors.push(error);
