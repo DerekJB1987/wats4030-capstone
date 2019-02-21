@@ -9,13 +9,7 @@
       <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
     </form>
 
-      <ul v-if="results" class="results">
-        <li v-for="item in results.list" class="item">
-          <p>{{results.contents.translated}}</p>
-        </li>
-      </ul>
-
-    <!-- <div>{{results.contents.translated}}</div> -->
+    <div v-if= "results && results.contents"><p>{{results.contents.translated}}</p></div>
 
   </div>
 </template>
