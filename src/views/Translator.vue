@@ -1,21 +1,30 @@
 <template>
 
-  <div class="yodaspeak">
+  <div class="translator">
     <!-- added router links -->
     <p>
-      <router-link v-bind:to="'translator'">Derek's Translator</router-link><br>
-      <router-link v-bind:to="'/'">Yoda Speak</router-link><br>
+      <router-link v-bind:to="'/'">Translator</router-link><br>
+      <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br>
       <router-link v-bind:to="'dothrakispeak'">Dothraki Speak</router-link><br>
       <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link><br>
       <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link><br>
       <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link><br>
+      <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br>
     </p>
 
-    <form v-on:submit.prevent="translate">
-      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
-    </form>
+  <div>
+    <b-form-select v-model="selected" :options="options" />
+    <b-form-select v-model="selected" :options="options" size="sm" class="mt-3" />
 
-    <div v-if= "results && results.contents"><p>{{results.contents.translated}}</p></div>
+    <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
+  </div>
+
+
+    <!-- <form v-on:submit.prevent="translate">
+      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
+    </form> -->
+
+    <!-- <div v-if= "results && results.contents"><p>{{results.contents.translated}}</p></div> -->
 
   </div>
 </template>
@@ -24,40 +33,43 @@
 import axios from 'axios'
 
 export default {
-  name: 'Yodaspeak',
+  name: 'translator',
   data () {
     return {
-      translated: "",
-      text: "",
-      translation: "yoda",
-      results: null,
-      errors: []
+      selected: null,
+      options: [
+          {id: 'dothrakispeak'},
+          {id: 'piratespeak'},
+          {id: 'shakespearespeak'},
+          {id: 'vulcanspeak'},
+          {id: 'yodaspeak'}
+      ]
     }
   },
 
-  methods: {
-    translate: function(){
-      console.log("May The Force Be With You")
-      axios.get('https://api.funtranslations.com/translate/yoda.json',{
-        params: {
-          text: this.text
-        }
-      })
-      .then(response => {
-        this.results = response.data;
-        console.log(this.results)
-      })
-      .catch(error => {
-        this.errors.push(error);
-      });
-    }
-  }
+//   methods: {
+//     translate: function(){
+//       console.log("May The Force Be With You")
+//       axios.get('https://api.funtranslations.com/translate/yoda.json',{
+//         params: {
+//           text: this.text
+//         }
+//       })
+//       .then(response => {
+//         this.results = response.data;
+//         console.log(this.results)
+//       })
+//       .catch(error => {
+//         this.errors.push(error);
+//       });
+//     }
+//   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.yodaspeak {
+.translator {
   font-size: 1.4rem;
 }
 

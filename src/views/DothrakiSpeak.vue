@@ -2,6 +2,7 @@
   <div class="dothrakispeak">
     <!-- added router links -->
     <p>
+      <router-link v-bind:to="'translator'">Translator</router-link><br>
       <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br>
       <router-link v-bind:to="'/'">Dothraki Speak</router-link><br>
       <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link><br>

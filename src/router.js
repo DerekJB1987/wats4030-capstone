@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Translator from '@/views/Translator'
 import YodaSpeak from '@/views/YodaSpeak'
 import DothrakiSpeak from '@/views/DothrakiSpeak'
 import PirateSpeak from '@/views/PirateSpeak'
@@ -13,6 +14,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Translator',
+      component: Translator
+    },
+    {
+      path: '/yodaspeak',
       name: 'YodaSpeak',
       component: YodaSpeak
     },
