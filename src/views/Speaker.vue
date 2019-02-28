@@ -3,8 +3,8 @@
     <h2>Let's talk like {{translation}}</h2>
     <!-- added router links -->
     <p>
-      <router-link v-bind:to="'translator'">Translator</router-link>
-      <br>
+      <!-- <router-link v-bind:to="'translator'">Translator</router-link> -->
+      <!-- <br>
       <router-link v-bind:to="'/'">Yoda Speak</router-link>
       <br>
       <router-link v-bind:to="'dothrakispeak'">Dothraki Speak</router-link>
@@ -14,7 +14,7 @@
       <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link>
       <br>
       <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link>
-      <br>
+      <br> -->
     </p>
 
     <form v-on:submit.prevent="translate">

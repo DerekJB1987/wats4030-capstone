@@ -1,59 +1,67 @@
 <template>
 
   <div class="yodaspeak">
-    <!-- added router links -->
-    <p>
+
+    <!-- <p>
+      <router-link v-bind:to="'/'">Translator</router-link><br>
       <router-link v-bind:to="'translator'">Derek's Translator</router-link><br>
       <router-link v-bind:to="'/'">Yoda Speak</router-link><br>
       <router-link v-bind:to="'dothrakispeak'">Dothraki Speak</router-link><br>
       <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link><br>
       <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link><br>
-      <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link><br>
-      <router-link to="'/speaker/yoda'">Speak</router-link><br>
-    </p>
+      <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link><br>-->
+    <!-- </p> -->
 
     <form v-on:submit.prevent="translate">
-      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
+      <p>Type your text below to convert to Yodaspeak
+        <input type="text" v-model="text">
+        <button type="submit">Translate</button>
+      </p>
     </form>
 
-    <div v-if= "results && results.contents"><p>{{results.contents.translated}}</p></div>
-
+    <div v-if="results && results.contents">
+      <p>{{results.contents.translated}}</p>
+    </div>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  name: 'Yodaspeak',
-  data () {
+  name: "Yodaspeak",
+  data() {
     return {
       translated: "",
       text: "",
       translation: "yoda",
       results: null,
       errors: []
-    }
+    };
   },
 
   methods: {
-    translate: function(){
-      console.log("May The Force Be With You")
-      axios.get(`https://api.funtranslations.com/translate/${this.translation}.json`,{
-        params: {
-          text: this.text
-        }
-      })
-      .then(response => {
-        this.results = response.data;
-        console.log(this.results)
-      })
-      .catch(error => {
-        this.errors.push(error);
-      });
+    translate: function() {
+      console.log("May The Force Be With You");
+      axios
+        .get(
+          `https://api.funtranslations.com/translate/${this.translation}.json`,
+          {
+            params: {
+              text: this.text
+            }
+          }
+        )
+        .then(response => {
+          this.results = response.data;
+          console.log(this.results);
+        })
+        .catch(error => {
+          this.errors.push(error);
+        });
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -62,7 +70,7 @@ export default {
   font-size: 1.4rem;
 }
 
-input[type="text"]{
+input[type="text"] {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -71,10 +79,10 @@ input[type="text"]{
   font-size: 1.4rem;
   color: #2c3e50;
   font-weight: 300;
-  background: rgba(0,0,0,0.02);
+  background: rgba(0, 0, 0, 0.02);
   padding: 0.5rem;
 }
-button{
+button {
   background: #333;
   padding: 0.5rem;
   font-weight: 300;
@@ -83,7 +91,8 @@ button{
   cursor: pointer;
   font-size: 1.4rem;
 }
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 
@@ -100,7 +109,7 @@ ul.results {
   width: 200px;
   min-height: 100px;
   color: #fff;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 a {
