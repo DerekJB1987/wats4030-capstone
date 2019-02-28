@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Derek's Galactic Translator</h1>
+    <h1> <a href="">Derek's Galactic Translator</a></h1>
     <router-view/>
   </div>
 </template>

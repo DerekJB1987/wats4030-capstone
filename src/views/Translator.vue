@@ -10,15 +10,12 @@
       <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link><br>
       <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link><br>
       <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br>
+      <router-link to='/speaker/yoda'>Yoda</router-link><br>
+      <router-link to='/speaker/pirate'>Pirate</router-link><br>
+      <router-link to='/speaker/dothraki'>Dothraki</router-link><br>
+      <router-link to='/speaker/shakespeare'>Shakespeare</router-link><br>
+      <router-link to='/speaker/vulcan'>Vulcan</router-link><br>
     </p>
-
-  <div>
-    <b-form-select v-model="selected" :options="options" />
-    <b-form-select v-model="selected" :options="options" size="sm" class="mt-3" />
-
-    <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
-  </div>
-
 
     <!-- <form v-on:submit.prevent="translate">
       <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
@@ -47,23 +44,23 @@ export default {
     }
   },
 
-//   methods: {
-//     translate: function(){
-//       console.log("May The Force Be With You")
-//       axios.get('https://api.funtranslations.com/translate/yoda.json',{
-//         params: {
-//           text: this.text
-//         }
-//       })
-//       .then(response => {
-//         this.results = response.data;
-//         console.log(this.results)
-//       })
-//       .catch(error => {
-//         this.errors.push(error);
-//       });
-//     }
-//   }
+  methods: {
+    translate: function(){
+      console.log("May The Force Be With You")
+      axios.get('https://api.funtranslations.com/translate/yoda.json',{
+        params: {
+          text: this.text
+        }
+      })
+      .then(response => {
+        this.results = response.data;
+        console.log(this.results)
+      })
+      .catch(error => {
+        this.errors.push(error);
+      });
+    }
+  }
 }
 </script>
 

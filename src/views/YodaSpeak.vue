@@ -9,6 +9,7 @@
       <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link><br>
       <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link><br>
       <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link><br>
+      <router-link to="'/speaker/yoda'">Speak</router-link><br>
     </p>
 
     <form v-on:submit.prevent="translate">
@@ -38,7 +39,7 @@ export default {
   methods: {
     translate: function(){
       console.log("May The Force Be With You")
-      axios.get('https://api.funtranslations.com/translate/yoda.json',{
+      axios.get(`https://api.funtranslations.com/translate/${this.translation}.json`,{
         params: {
           text: this.text
         }

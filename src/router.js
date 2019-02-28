@@ -6,13 +6,13 @@ import DothrakiSpeak from '@/views/DothrakiSpeak'
 import PirateSpeak from '@/views/PirateSpeak'
 import ShakespeareSpeak from '@/views/ShakespeareSpeak'
 import VulcanSpeak from '@/views/VulcanSpeak'
+import Speaker from '@/views/Speaker'
 // TODO: Import new component
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'Translator',
       component: Translator
@@ -30,18 +30,23 @@ export default new Router({
     {
       path: '/piratespeak',
       name: 'PirateSpeak',
-      component: PirateSpeak      
+      component: PirateSpeak
     },
     {
       path: '/shakespearespeak',
       name: 'ShakespeareSpeak',
-      component: ShakespeareSpeak      
+      component: ShakespeareSpeak
     },
     {
       path: '/vulcanspeak',
       name: 'VulcanSpeak',
-      component: VulcanSpeak      
-    } 
+      component: VulcanSpeak
+    },
+    {
+      path: '/speaker/:translator',
+      component: Speaker,
+      props: true
+    }
     // TODO: Add new route definition here.
   ]
 })
