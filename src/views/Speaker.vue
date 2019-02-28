@@ -28,7 +28,7 @@
     <div v-if="results && results.contents">
       <p>{{results.contents.translated}}</p>
     </div>
-
+ 
     <figure>
         <img :src="'./assets/' + translation + '.jpg'" :alt="translation" srcset="">
     </figure>

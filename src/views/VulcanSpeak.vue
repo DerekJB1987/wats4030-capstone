@@ -37,7 +37,7 @@ export default {
   methods: {
     translate: function(){
       console.log("Live long and prosper")
-      axios.get('https://api.funtranslations.com/translate/vulcan.json',{
+      axios.get(`https://api.funtranslations.com/translate/${this.translation}.json`,{
         params: {
           text: this.text
         }

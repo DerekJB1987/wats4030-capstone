@@ -37,7 +37,7 @@ export default {
   methods: {
     translate: function(){
       console.log("Why is the rum gone?")
-      axios.get('https://api.funtranslations.com/translate/pirate.json',{
+      axios.get(`https://api.funtranslations.com/translate/${this.translation}.json`,{
         params: {
           text: this.text
         }

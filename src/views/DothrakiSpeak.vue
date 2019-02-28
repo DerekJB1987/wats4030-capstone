@@ -38,7 +38,7 @@ export default {
   methods: {
     translate: function(){
       console.log("Have you seen my horse?")
-      axios.get('https://api.funtranslations.com/translate/dothraki.json',{
+      axios.get(`https://api.funtranslations.com/translate/${this.translation}.json`,{
         params: {
           text: this.text
         }

@@ -36,8 +36,8 @@ export default {
 
   methods: {
     translate: function(){
-      console.log("O excellent!")
-      axios.get('https://api.funtranslations.com/translate/shakespeare.json',{
+      console.log("To be or not to be!")
+      axios.get(`https://api.funtranslations.com/translate/${this.translation}.json`,{
         params: {
           text: this.text
         }
