@@ -7,8 +7,8 @@ import PirateSpeak from '@/views/PirateSpeak'
 import ShakespeareSpeak from '@/views/ShakespeareSpeak'
 import VulcanSpeak from '@/views/VulcanSpeak'
 import Speaker from '@/views/Speaker'
-import AboutDerek from '/@/views/AboutDerek'
-import AboutProject from '/@/views/AboutProject'
+import AboutDerek from '@/AboutDerek'
+import AboutProject from '@/AboutProject'
 // TODO: Import new component
 
 Vue.use(Router)
