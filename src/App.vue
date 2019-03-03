@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <h2>Nav Bar</h2>
+    <nav>
+      <router-link to="/aboutderek">About Derek</router-link>
+      <router-link to="/aboutproject">About Project</router-link>
+    </nav>
     <h1> <a href="">Derek's Galactic Translator</a></h1>
     <router-view/>
   </div>

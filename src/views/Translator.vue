@@ -16,13 +16,6 @@
       <router-link to='/speaker/shakespeare'>Shakespeare</router-link><br>
       <router-link to='/speaker/vulcan'>Vulcan</router-link><br>
     </p>
-
-    <!-- <form v-on:submit.prevent="translate">
-      <p>Type your text below to convert to Yodaspeak <input type="text" v-model="text"><button type="submit">Translate</button></p>
-    </form> -->
-
-    <!-- <div v-if= "results && results.contents"><p>{{results.contents.translated}}</p></div> -->
-
   </div>
 </template>
 
@@ -93,25 +86,5 @@ button{
 }
 h1, h2 {
   font-weight: normal;
-}
-
-ul.results {
-  list-style-type: none;
-  padding: 0;
-}
-
-.results li {
-  display: inline-block;
-  margin: 10px;
-  border: solid 1px #333;
-  padding: 0.5rem;
-  width: 200px;
-  min-height: 100px;
-  color: #fff;
-  background: rgba(0,0,0,0.7);
-}
-
-a {
-  color: #42b983;
 }
 </style>
