@@ -1,7 +1,6 @@
 <template>
   <div class="speaker">
     <h2>Let's talk like {{translation}}</h2>
-    <!-- added router links -->
     <p>
       <!-- <router-link v-bind:to="'translator'">Translator</router-link> -->
       <!-- <br>
