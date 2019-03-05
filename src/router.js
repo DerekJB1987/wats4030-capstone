@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Translator from '@/views/Translator'
+import NavBar from '@/views/NavBar'
 import YodaSpeak from '@/views/YodaSpeak'
 import DothrakiSpeak from '@/views/DothrakiSpeak'
 import PirateSpeak from '@/views/PirateSpeak'
@@ -58,6 +59,11 @@ export default new Router({
       path: '/aboutproject',
       name: 'AboutProject',
       component: AboutProject
+    },
+    {
+      path: 'navbar',
+      name: 'NavBar',
+      component: NavBar
     }
     // TODO: Add new route definition here.
   ]
