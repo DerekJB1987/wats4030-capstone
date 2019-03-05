@@ -29,7 +29,7 @@
     </div>
  
     <figure>
-        <img :src="'./assets/' + translation + '.jpg'" :alt="translation" srcset="">
+        <img :src="'./docs/assets/img' + translation + '.jpg'" :alt="translation" srcset="">
     </figure>
 
   </div>
