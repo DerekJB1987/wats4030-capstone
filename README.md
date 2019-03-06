@@ -1,49 +1,35 @@
-# Using APIs to Provide Data
+# Seattle University Web Development Certificate WATS 4030 Capstone Project
 
-> Practicing using APIs to retreive data in an application.
-
-It is very common to use third-party data APIs to enhance our applications. It
-is also common to build our own API services and then reveal even custom logic
-and features through a standardized API interface. This type of application
-architecture has become very popular online, and it is a fundamental technique
-in building website and web-based applications.
-
-This project is designed to practice creating simple API requests from within a
-Vue.js application. We will make requests and use them to populate information
-for our users. For this project, we will make requests to the [Datamuse API](http://www.datamuse.com/api/),
-which is a wonderful, free service useful for finding the word we need.
-
-This project is designed to go alongside the content and instructions in the
-[Practical JavaScript 2: Building Applications](https://suwebdev.github.io/WATS-4000-gitbook/using-api-data/) book.
+> This project is a display of all of the web development skills I attained during the program from April 2018 to March 2019.
 
 ## Project Goals
-The goal for this project is to make the "Rhymesaurus" functional. This feature
-allows a user to search for words that rhyme with something and have to do with
-a specific topic. The user can fill in both fields to specify the parameters of
-their search, and then words are returned. If no words are found, then the user
-is advised of that failure and can alter their search parameters.
+This project is intended to create a featured item in my portfolio. Along with other projects to show the progression of my skills throughout the program.
 
-Once we have completed that, we will be challenged to create another component
-from scratch that performs a different kind of search.
+I decided to use Vue.js app that was powered using data from a third party API. 
+
+To be completed later.
 
 ## Basic Requirements
 In order to successfully complete this project, we must fulfill the following
 requirements. The requirements below are organized according to the file we will
 modify to fulfill them.
 
-**`/src/components/Rhymesaurus.vue`**
+* Come up with an idea for a web project that fits with your career goals and skill set.
+* Express your plans to complete the project using wireframes, design comps, palettes, and other planning documents.
+* Create a development environment suitable for working with your chosen technology.
+* Use standards-compliant HTML, CSS and JavaScript.
+* Provide a usable experience across modern web browsers (including the latest versions of Edge/IE, Chrome, Safari, Firefox) and mobile experiences (including iOS and Android browsers).
+* Provide a usable experience for users who require assistive technologies.
+* Implement at least one significant feature or layout powered by JavaScript.
+* Implement at least one third party data API to receive data used in the project. (This can be a data API implemented or deployed by you, or something created by an external provider.)
+* Create a user friendly information architecture that allows users to easily accomplish their goals within your project.
+* Create an elegant and engaging visual design so users have a more enjoyable experience with your project.
+* Implement a third party analytics solution so user behavior can be tracked and monitored.
+* Deploy the project consistently to a publicly accessible server throughout the development process so your work can be reviewed on a regular basis.
 
-`<template>`
+## How to Use my Project
 
-* Set up an event handler to trigger the `findWords` method when the `form` is submitted
-* Use a conditional to control the display of the `ul.results` element so it only displays when results are ready to be shown
-* Use a loop to process all of the results into list items
-    * Output the word in each list item
-    * Output the score for each word in each list item
-* Use a conditional to control the display of the `.no-results` message, which should only show when the user has attempted a search and no words have been found
-* Use a conditional to control the display of the `ul.errors` element so it only displays when there are errors ready to be shown
-* Use a loop to process all of the errors and display them for the user
-
+* To be finished at a later time
 `<script>`
 
 * Import axios for use in the component logic
