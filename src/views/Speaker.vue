@@ -20,7 +20,7 @@
       <p>
         Type your text below to convert to {{translation}}
         <input type="text" v-model="text">
-        <button type="submit">Translate</button>
+        <button class="btn btn-primary" type="submit">Translate</button>
       </p>
     </form>
 

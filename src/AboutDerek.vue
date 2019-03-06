@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: 'aboutderek',
+    name: 'about-derek',
 }
 </script>
 
