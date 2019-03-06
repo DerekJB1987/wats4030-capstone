@@ -1,13 +1,10 @@
 <template>
   <div id="app">
+
     <div id="nav">
       <nav-bar></nav-bar>
     </div>
-    <!-- <h2>Nav Bar</h2>
-    <nav>
-      <router-link to="/aboutderek">About Derek</router-link>
-      <router-link to="/aboutproject">About Project</router-link>
-    </nav> -->
+    
     <h1> <a href="">Derek's Galactic Translator</a></h1>
     <router-view/>
   </div>
