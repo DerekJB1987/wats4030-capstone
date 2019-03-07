@@ -8,7 +8,7 @@
 <script>
 export default {
     name: 'about-project',
-}
+};
 </script>
 
 <style scoped>

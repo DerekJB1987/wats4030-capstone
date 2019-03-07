@@ -29,7 +29,7 @@
     </div>
  
     <figure>
-        <img :src="'./docs/assets/img' + translation + '.jpg'" :alt="translation" srcset="">
+        <img :src="buildSpeakerURL()" :alt="buildAltTag()">
     </figure>
 
   </div>
@@ -60,7 +60,7 @@ export default {
 
   methods: {
     translate: function() {
-      console.log("May The Force Be With You");
+      console.log("Who am I speaking with?");
       axios
         .get(
           `https://api.funtranslations.com/translate/${this.translation}.json`,
@@ -77,6 +77,12 @@ export default {
         .catch(error => {
           this.errors.push(error);
         });
+      buildSpeakerURL() {
+        returnrequire(`../assets/${this.translation}.jpg`);
+      };
+      buildAltTag() {
+        return `Logo of ${this.translation}`;
+      };
     }
   }
 };
