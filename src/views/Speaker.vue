@@ -27,10 +27,6 @@
     <div v-if="results && results.contents">
       <p>{{results.contents.translated}}</p>
     </div>
- 
-    <!-- <figure>
-        <img :src="buildSpeakerURL()" :alt="buildAltTag()">
-    </figure> -->
 
   </div>
 </template>
@@ -77,12 +73,6 @@ export default {
         .catch(error => {
           this.errors.push(error);
         });
-      // buildSpeakerURL() {
-      //   return require(`../assets/${this.translation}.jpg`);
-      // };
-      // buildAltTag() {
-      //   return `Logo of ${this.translation}`;
-      // };
     }
   }
 };
