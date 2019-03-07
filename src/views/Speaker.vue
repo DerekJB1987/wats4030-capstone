@@ -28,9 +28,9 @@
       <p>{{results.contents.translated}}</p>
     </div>
  
-    <figure>
+    <!-- <figure>
         <img :src="buildSpeakerURL()" :alt="buildAltTag()">
-    </figure>
+    </figure> -->
 
   </div>
 </template>
@@ -77,12 +77,12 @@ export default {
         .catch(error => {
           this.errors.push(error);
         });
-      buildSpeakerURL() {
-        returnrequire(`../assets/${this.translation}.jpg`);
-      };
-      buildAltTag() {
-        return `Logo of ${this.translation}`;
-      };
+      // buildSpeakerURL() {
+      //   returnrequire(`../assets/${this.translation}.jpg`);
+      // };
+      // buildAltTag() {
+      //   return `Logo of ${this.translation}`;
+      // };
     }
   }
 };
