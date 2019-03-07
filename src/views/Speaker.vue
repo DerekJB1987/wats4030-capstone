@@ -78,7 +78,7 @@ export default {
           this.errors.push(error);
         });
       // buildSpeakerURL() {
-      //   returnrequire(`../assets/${this.translation}.jpg`);
+      //   return require(`../assets/${this.translation}.jpg`);
       // };
       // buildAltTag() {
       //   return `Logo of ${this.translation}`;
