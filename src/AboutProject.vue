@@ -4,7 +4,7 @@
       <p>
 This project is intended to be a featured item in my wed development portfolio.
 I used Vue.js to create a webapp that incorporates HTML, CSS and JavaScript to import data from a third party API.
-This API is attributed to Fun Translations located at <a href="https://funtranslations.com/#">Fun Translations API</a>Derek's Galactic Translator</p>
+This API is attributed to Fun Translations located at <a href="https://funtranslations.com/#">Fun Translations API</a></p>
   </div>
 </template>
 
