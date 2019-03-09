@@ -27,7 +27,7 @@ modify to fulfill them.
 
 ## How to Use my Project
 
-My website is simple to use, all you have to do is click the following link <a href="http://derekbenak.com/wats4030-capstone/#/"> that will take you directly to my project. Then click on the Vue router-link for the theme that interests you most and enter a phrase that you want to see translated into that specific language. Fun Translations does have 60 API calls a day with distribution of 5 calls an hour to maintain their service level.
+My website is simple to use, all you have to do is click the following link <a href="http://derekbenak.com/wats4030-capstone/#/"></a> that will take you directly to my project. Then click on the Vue router-link for the theme that interests you most and enter a phrase that you want to see translated into that specific language. Fun Translations does have 60 API calls a day with distribution of 5 calls an hour to maintain their service level.
 
 ## Instructions for working with this application
 
