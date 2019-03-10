@@ -8,7 +8,7 @@ import PirateSpeak from '@/views/PirateSpeak'
 import ShakespeareSpeak from '@/views/ShakespeareSpeak'
 import VulcanSpeak from '@/views/VulcanSpeak'
 import Speaker from '@/views/Speaker'
-import AboutDerek from '@/AboutDerek'
+import AboutMe from '@/AboutMe'
 import AboutProject from '@/AboutProject'
 // TODO: Import new component
 
@@ -51,9 +51,9 @@ export default new Router({
       props: true
     },
     {
-      path: '/aboutderek',
-      name: 'AboutDerek',
-      component: AboutDerek
+      path: '/aboutme',
+      name: 'AboutMe',
+      component: AboutMe
     },
     {
       path: '/aboutproject',

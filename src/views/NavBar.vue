@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="lg" type="light" variant="info">
     <b-navbar-brand to="/">Home</b-navbar-brand>
-      <b-navbar-brand to="/aboutderek">About Derek</b-navbar-brand>
+      <b-navbar-brand to="/aboutme">About Me</b-navbar-brand>
       <b-navbar-brand to="/aboutproject">About Project</b-navbar-brand>
   </b-navbar>
 </template>

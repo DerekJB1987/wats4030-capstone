@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "about-derek"
+  name: "about-me"
 };
 </script>
 
