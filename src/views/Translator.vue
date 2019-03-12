@@ -87,4 +87,7 @@ button{
 h1, h2 {
   font-weight: normal;
 }
+a:link {
+  text-decoration: none;
+}
 </style>
