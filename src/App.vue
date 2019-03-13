@@ -30,6 +30,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #ebd5b3;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 a:link {
   text-decoration: none;
