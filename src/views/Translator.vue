@@ -89,5 +89,11 @@ h1, h2 {
 }
 a:link {
   text-decoration: none;
+  color: white;
+  padding: 0.5px;
+  text-transform: uppercase;
+}
+a:hover {
+  cursor: pointer;
 }
 </style>

@@ -5,8 +5,8 @@
       I have worked at Boeing for over 6 years and always visualized becoming part of the tech industry growing in my hometown of Seattle.</p>
       <p>I recently completed a web development certificate program at Seattle University and learned many front-end technologies and skills such as HTML, CSS, JavaScript, Bootstrap and Vue.js among others.<br></p>
       <p>My prior work experience allows me to understand office dynamics while still effectively working in teams to complete projects on time and increasing the efficiency of standard processes.</p><br>
-      <p><a href="https://derekbenak.com/">My Portfolio</a></p>
-      <p><a href="https://github.com/DerekJB1987">My Github Account</a></p>
+      <p><a href="https://derekbenak.com/" target="_blank">My Portfolio</a></p>
+      <p><a href="https://github.com/DerekJB1987" target="_blank">My Github Account</a></p>
   </div>
 </template>
 
