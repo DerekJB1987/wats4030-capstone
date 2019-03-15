@@ -86,7 +86,7 @@ button {
   background: #333;
   padding: 0.5rem;
   font-weight: 300;
-  color: #fff;
+  /* color: #fff; */
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
@@ -108,7 +108,7 @@ ul.results {
   padding: 0.5rem;
   width: 200px;
   min-height: 100px;
-  color: #fff;
+  /* color: #fff; */
   background: rgba(0, 0, 0, 0.7);
 }
 
