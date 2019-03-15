@@ -78,7 +78,7 @@ button{
   background: #333;
   padding: 0.5rem;
   font-weight: 300;
-  color: #fff;
+  color: #333;
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
