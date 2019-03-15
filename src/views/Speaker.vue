@@ -33,9 +33,11 @@
 
 <script>
 import axios from "axios";
+require('vue2-animate/dist/vue2-animate.min.css');
 
 export default {
   name: "speaker",
+
   props: ["translator"],
   data() {
     return {

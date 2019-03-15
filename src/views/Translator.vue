@@ -3,7 +3,7 @@
   <div class="translator">
     <!-- added router links -->
     <p>
-      <router-link v-bind:to="'/'">Translator</router-link><br>
+      <!-- <router-link v-bind:to="'/'">Translator</router-link><br> -->
       <!-- <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br>
       <router-link v-bind:to="'dothrakispeak'">Dothraki Speak</router-link><br>
       <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link><br>
@@ -39,7 +39,6 @@ export default {
 
   methods: {
     translate: function(){
-      console.log("May The Force Be With You")
       axios.get('https://api.funtranslations.com/translate/',{
         params: {
           text: this.text

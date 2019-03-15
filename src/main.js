@@ -6,13 +6,10 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
-
 Vue.use(BootstrapVue)
 
 Vue.use(VueAnalytics, {
-  id: 'UA-XXX-X',
-  checkDuplicatedScript: true
+  id: 'UA-1234-5',
 })
 
 /* eslint-disable no-new */
@@ -22,4 +19,3 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-
