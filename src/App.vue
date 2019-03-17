@@ -7,6 +7,15 @@
     
     <h1> <a href="">Derek's Galactic Translator</a></h1>
     <router-view/>
+  <div>
+    <p>
+      <img src="/src/assets/yoda.jpg" class="img-thumbnail" alt="Yoda">
+      <img src="/src/assets/pirate.jpg" class="img-thumbnail" alt="Jack Sparrow">
+      <img src="/src/assets/dothraki.jpg" class="img-thumbnail" alt="Khal Drogo">
+      <img src="/src/assets/shakespeare.jpg" class="img-thumbnail" alt="Shakespeare">
+      <img src="/src/assets/vulcan.jpg" class="img-thumbnail" alt="Spock">
+    </p>
+  </div>
   </div>
 </template>
 

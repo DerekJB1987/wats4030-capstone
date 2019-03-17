@@ -17,6 +17,7 @@
       <router-link to='/speaker/vulcan'>Vulcan</router-link><br>
     </p>
   </div>
+
 </template>
 
 <script>
