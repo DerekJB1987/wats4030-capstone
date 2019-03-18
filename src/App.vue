@@ -7,15 +7,22 @@
     
     <h1> <a href="">Derek's Galactic Translator</a></h1>
     <router-view/>
-  <div>
-    <p>
-      <img src="/src/assets/yoda.jpg" class="img-thumbnail" alt="Yoda">
-      <img src="/src/assets/pirate.jpg" class="img-thumbnail" alt="Jack Sparrow">
-      <img src="/src/assets/dothraki.jpg" class="img-thumbnail" alt="Khal Drogo">
-      <img src="/src/assets/shakespeare.jpg" class="img-thumbnail" alt="Shakespeare">
-      <img src="/src/assets/vulcan.jpg" class="img-thumbnail" alt="Spock">
-    </p>
-  </div>
+    <div>
+      <b-carousel
+        id="carousel-fade"
+        style="text-shadow: 0px 0px 2px #000"
+        fade
+        indicators
+        img-width="1024"
+        img-height="480"
+        >
+        <b-carousel-slide caption="Yoda" img-src="/src/assets/yoda.jpg" class="img-thumbnail" alt="Yoda" />
+        <b-carousel-slide caption="Pirate" img src="/src/assets/pirate.jpg" class="img-thumbnail" alt="Jack Sparrow" />
+        <b-carousel-slide caption="Dothraki" img src="/src/assets/dothraki.jpg" class="img-thumbnail" alt="Khal Drogo" />
+        <b-carousel-slide caption="Shakespearean" img src="/src/assets/shakespeare.jpg" class="img-thumbnail" alt="Shakespeare" />
+        <b-carousel-slide caption="Vulcan" img src="/src/assets/vulcan.jpg" class="img-thumbnail" alt="Spock" />
+      </b-carousel>
+    </div>
   </div>
 </template>
 
