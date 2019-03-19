@@ -20,7 +20,7 @@
       <p>
         Type your text below to convert to {{translation}}
         <input type="text" v-model="text">
-        <button class="btn btn-primary" type="submit">Translate</button>
+        <button class="btn btn-primary" type="submit" onClick="_gaq.push(['_trackEvent','Button Clicked', Click', Translate');"'>Translate</button>
       </p>
     </form>
 
@@ -33,7 +33,7 @@
 
 <script>
 import axios from "axios";
-require('vue2-animate/dist/vue2-animate.min.css');
+import VueAnalytics from 'vue-analytics'
 
 export default {
   name: "speaker",
@@ -46,9 +46,6 @@ export default {
       results: null,
       errors: [],
       translation: null,
-      images: {
-          yoda: 'yoda.jpg'
-      }
     };
   },
 
@@ -75,6 +72,11 @@ export default {
         .catch(error => {
           this.errors.push(error);
         });
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'button',
+        eventAction: 'click'
+      });
     }
   }
 };

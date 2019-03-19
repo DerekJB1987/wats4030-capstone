@@ -6,10 +6,11 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
 
+Vue.config.productionTip = false;
 Vue.use(BootstrapVue)
 
 Vue.use(VueAnalytics, {
-  id: 'UA-1234-5',
+  id: 'UA-129082739-2',
 })
 
 /* eslint-disable no-new */

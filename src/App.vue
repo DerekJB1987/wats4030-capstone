@@ -8,7 +8,7 @@
     <h1> <a href="">Derek's Galactic Translator</a></h1>
     <router-view/>
     <div>
-      <b-container fluid class="p-4 bg-dark">
+      <b-container class="mb-5">
         <b-row>
           <b-col>
             <b-img thumbnail fluid src="/src/assets/yoda.jpg" alt="Yoda" />
@@ -33,6 +33,7 @@
 
 <script>
 import NavBar from "@/views/NavBar";
+import { Image } from 'bootstrap-vue/es/components/image'
 
 export default {
   name: 'app',
