@@ -11,19 +11,19 @@
       <b-container class="mb-5">
         <b-row>
           <b-col>
-            <b-img thumbnail fluid src="/src/assets/yoda.jpg" alt="Yoda" />
+            <b-img thumbnail fluid src="./images/yoda.jpg" alt="Yoda" />
           </b-col>
           <b-col>
-            <b-img thumbnail fluid src="/src/assets/pirate.jpg" alt="Jack Sparrow" />
+            <b-img thumbnail fluid src="./images/pirate.jpg" alt="Jack Sparrow" />
           </b-col>
           <b-col>
-            <b-img thumbnail fluid src="/src/assets/dothraki.jpg" alt="Khal Drogo" />
+            <b-img thumbnail fluid src="./images/dothraki.jpg" alt="Khal Drogo" />
           </b-col>
           <b-col>
-            <b-img thumbnail fluid src="/src/assets/shakespeare.jpg" alt="Shakespeare" />
+            <b-img thumbnail fluid src="./images/shakespeare.jpg" alt="Shakespeare" />
           </b-col>
           <b-col>
-            <b-img thumbnail fluid src="/src/assets/vulcan.jpg" alt="Spock" />
+            <b-img thumbnail fluid src="./images/vulcan.jpg" alt="Spock" />
           </b-col>
         </b-row>
       </b-container>
@@ -51,7 +51,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
   background-color: #ebd5b3;
   background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
