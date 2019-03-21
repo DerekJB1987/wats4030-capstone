@@ -1,26 +1,12 @@
 <template>
   <div class="speaker">
     <h2>Let's talk like {{translation}}</h2>
-    <p>
-      <!-- <router-link v-bind:to="'translator'">Translator</router-link> -->
-      <!-- <br>
-      <router-link v-bind:to="'/'">Yoda Speak</router-link>
-      <br>
-      <router-link v-bind:to="'dothrakispeak'">Dothraki Speak</router-link>
-      <br>
-      <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link>
-      <br>
-      <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link>
-      <br>
-      <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link>
-      <br> -->
-    </p>
 
     <form v-on:submit.prevent="translate">
       <p>
         Type your text below to convert to {{translation}}
         <input type="text" v-model="text">
-        <button class="btn btn-primary" type="submit" onClick="_gaq.push(['_trackEvent','Button Clicked', Click', Translate');"'>Translate</button>
+        <button class="btn btn-primary" type="submit" onClick="_gaq.push(['_trackEvent','Button Clicked', Click', Translate');">Translate</button>
       </p>
     </form>
 
@@ -85,7 +71,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .speaker {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 input[type="text"] {
@@ -93,44 +79,19 @@ input[type="text"] {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #333;
-  width: 300px;
-  font-size: 1.4rem;
-  color: #2c3e50;
+  width: 400px;
+  font-size: 1.5rem;
+  color: #1A40D7;
   font-weight: 300;
   background: rgba(0, 0, 0, 0.02);
   padding: 0.5rem;
 }
 button {
-  background: #333;
+  background: #ff3333;
   padding: 0.5rem;
   font-weight: 300;
-  /* color: #fff; */
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
-}
-h1,
-h2 {
-  font-weight: normal;
-}
-
-ul.results {
-  list-style-type: none;
-  padding: 0;
-}
-
-.results li {
-  display: inline-block;
-  margin: 10px;
-  border: solid 1px #333;
-  padding: 0.5rem;
-  width: 200px;
-  min-height: 100px;
-  /* color: #fff; */
-  background: rgba(0, 0, 0, 0.7);
-}
-
-a {
-  color: #42b983;
 }
 </style>

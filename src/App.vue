@@ -56,8 +56,27 @@ export default {
   background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+h1, h2 {
+  color: #2c3e50;
+  font-weight: normal;
+}
+.results li {
+  display: inline-block;
+  margin: 10px;
+  border: solid 1px #333;
+  padding: 0.5rem;
+  width: 200px;
+  min-height: 100px;
+  color: #7CFC00;
+  background: rgba(0, 0, 0, 0.7);
+}
 a:link {
   text-decoration: none;
-  color: #107896;
+}
+a {
+  color: #9932CC;
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>

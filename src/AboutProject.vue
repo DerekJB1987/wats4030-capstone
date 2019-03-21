@@ -7,6 +7,7 @@
       <p>My project also uses BootStrap 4 to aid in styling and CSS as well as practice my Bootstrap skills that was taught briefly earlier in the program.</p>
       <p> Derek's Galactic Translator uses the <a href="https://funtranslations.com/#">Fun Translations API</a> to send a text input by the user to the third party API site and return a JSON translation for the user to view.</p>
       <p>To analyze my project for user accessibility, I checked it with <a href="https://wave.webaim.org/">WAVE</a> by using their URL Dinolytics feature.</p>
+      <p>Fun Translations API is public and imposes a ratelimit of 60 calls per day with a distribution of 5 per hour</p>
       <p>The Github repo for the code to my project is located at <a href="https://github.com/DerekJB1987/wats4030-capstone" target="_blank">wats4030-capstone</a></p></p>
   </div>
 </template>
