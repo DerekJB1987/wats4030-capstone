@@ -46,17 +46,18 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  background-color: #ebd5b3;
+  background-color: #BDBDBD;
   background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 a:link {
   text-decoration: none;
+  color: #107896;
 }
 </style>
