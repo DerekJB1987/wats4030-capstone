@@ -81,13 +81,13 @@ input[type="text"] {
   border-bottom: 1px solid #333;
   width: 400px;
   font-size: 1.5rem;
-  color: #1A40D7;
+  color: #000000;
   font-weight: 300;
   background: rgba(0, 0, 0, 0.02);
   padding: 0.5rem;
 }
 button {
-  background: #FF8C00;
+  background: #2d2423;
   padding: 0.5rem;
   font-weight: 300;
   border: none;
@@ -95,6 +95,6 @@ button {
   font-size: 1.4rem;
 }
 p {
-  color: #1A40D7;
+  color: #000000;
 }
 </style>

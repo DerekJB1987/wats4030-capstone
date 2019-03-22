@@ -74,7 +74,10 @@ a:link {
   text-decoration: none;
 }
 a {
-  color: #ff0000;
+  color: #1941D8;
   font-weight: bold;
+}
+nav {
+
 }
 </style>
