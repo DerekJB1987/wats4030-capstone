@@ -87,11 +87,14 @@ input[type="text"] {
   padding: 0.5rem;
 }
 button {
-  background: #ff3333;
+  background: #FF8C00;
   padding: 0.5rem;
   font-weight: 300;
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
+}
+p {
+  color: #1A40D7;
 }
 </style>

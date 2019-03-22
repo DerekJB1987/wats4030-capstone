@@ -74,9 +74,7 @@ a:link {
   text-decoration: none;
 }
 a {
-  color: #9932CC;
-}
-a:hover {
-  text-decoration: underline;
+  color: #ff0000;
+  font-weight: bold;
 }
 </style>
