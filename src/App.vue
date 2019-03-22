@@ -11,19 +11,7 @@
       <b-container class="mb-5">
         <b-row>
           <b-col>
-            <b-img thumbnail fluid src="./images/yoda.jpg" alt="Yoda" />
-          </b-col>
-          <b-col>
-            <b-img thumbnail fluid src="./images/pirate.jpg" alt="Jack Sparrow" />
-          </b-col>
-          <b-col>
-            <b-img thumbnail fluid src="./images/dothraki.jpg" alt="Khal Drogo" />
-          </b-col>
-          <b-col>
-            <b-img thumbnail fluid src="./images/shakespeare.jpg" alt="Shakespeare" />
-          </b-col>
-          <b-col>
-            <b-img thumbnail fluid src="./images/vulcan.jpg" alt="Spock" />
+            <b-img thumbnail fluid src="./images/derek_galactica.png" alt="Galaxy with Khal Drogo, Jack Sparrow, Yoda, Shakespeare and Spock" />
           </b-col>
         </b-row>
       </b-container>
