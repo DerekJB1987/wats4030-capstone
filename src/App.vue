@@ -65,7 +65,17 @@ a {
   color: #1941D8;
   font-weight: bold;
 }
-nav {
 
-}
+/*Responsive breakpoints */
+
+/* Extra Small devices (description) */
+
+/* Small devices (description) */
+
+/* Medium devices (description) */
+
+/* Large devices (description) */
+
+/* Extra Large devices (description) */
+
 </style>

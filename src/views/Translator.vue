@@ -3,13 +3,6 @@
   <div class="translator">
     <!-- added router links -->
     <p>
-      <!-- <router-link v-bind:to="'/'">Translator</router-link><br> -->
-      <!-- <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br>
-      <router-link v-bind:to="'dothrakispeak'">Dothraki Speak</router-link><br>
-      <router-link v-bind:to="'piratespeak'">Pirate Speak</router-link><br>
-      <router-link v-bind:to="'shakespearespeak'">Shakespeare Speak</router-link><br>
-      <router-link v-bind:to="'vulcanspeak'">Vulcan Speak</router-link><br>
-      <router-link v-bind:to="'yodaspeak'">Yoda Speak</router-link><br> -->
       <router-link to='/speaker/yoda'>Yoda</router-link><br>
       <router-link to='/speaker/pirate'>Pirate</router-link><br>
       <router-link to='/speaker/dothraki'>Dothraki</router-link><br>
