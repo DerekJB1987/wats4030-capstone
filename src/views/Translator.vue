@@ -101,5 +101,20 @@ a:hover {
   text-decoration: underline;
   color: #42f4e5;
 }
-
+/*Responsive breakpoints */
+/* Extra Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.99px) {
+}
+/* Small devices (landscape phones, greater than 576px but less than 768px) */
+@media (min-width: 576px) and (max-width: 767.99px) {
+}
+/* Medium devices (tablets, greater than 768px but less than 992px) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+}
+/* Large devices (desktops, greater than 992px but less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+}
+/* Extra Large devices (large desktops/monitor screens, greater than 1200px) */
+@media (min-width: 1200px) {
+}
 </style>
