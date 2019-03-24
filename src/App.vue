@@ -69,7 +69,9 @@ a {
   color: #1941D8;
   font-weight: bold;
 }
-
+.bg-primary {
+    background-image: linear-gradient(120deg, #5206b5 0%, #920D68 100%)!important;
+}
 /*Responsive breakpoints */
 
 /* Extra Small devices (description) */
