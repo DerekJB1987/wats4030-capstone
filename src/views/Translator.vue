@@ -1,7 +1,7 @@
 <template>
 
   <div class="translator">
-    <!-- added router links -->
+
     <p>
       <router-link to='/speaker/yoda'>Yoda</router-link><br>
       <router-link to='/speaker/pirate'>Pirate</router-link><br>
@@ -47,13 +47,23 @@ export default {
       });
     }
   }
-}
+};
+
+import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-129082739-2',
+  checkDuplicateScript: true
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
+
 .translator {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 input[type="text"]{
@@ -91,4 +101,5 @@ a:hover {
   text-decoration: underline;
   color: #42f4e5;
 }
+
 </style>

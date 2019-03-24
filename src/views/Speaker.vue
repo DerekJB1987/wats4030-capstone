@@ -19,7 +19,6 @@
 
 <script>
 import axios from "axios";
-import VueAnalytics from 'vue-analytics'
 
 export default {
   name: "speaker",
@@ -66,6 +65,15 @@ export default {
     }
   }
 };
+
+import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-129082739-2',
+  checkDuplicateScript: true
+});
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -21,6 +21,7 @@
 
 <script>
 import NavBar from "@/views/NavBar";
+import VueAnalytics from 'vue-analytics'
 import { Image } from 'bootstrap-vue/es/components/image'
 
 export default {
@@ -30,6 +31,9 @@ export default {
     "nav-bar": NavBar
   }
 };
+
+
+
 </script>
 
 <style>
