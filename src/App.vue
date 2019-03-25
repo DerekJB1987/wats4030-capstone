@@ -11,7 +11,7 @@
       <b-container class="mb-5">
         <b-row>
           <b-col>
-            <b-img thumbnail fluid src="./images/derek_galactica.png" alt="Galaxy with Khal Drogo, Jack Sparrow, Yoda, Shakespeare and Spock" />
+            <b-img thumbnail fluid src="./images/derek_galactica.png" alt="Background image of a galaxy with portrait images of Khal Drogo, Jack Sparrow, Yoda, Shakespeare and Spock carousel in the middle" />
           </b-col>
         </b-row>
       </b-container>
@@ -70,7 +70,7 @@ a {
   font-weight: bold;
 }
 .bg-primary {
-    background-image: linear-gradient(120deg, #5206b5 0%, #920D68 100%)!important;
+    background-image: linear-gradient(120deg,#000000,#073176)!important; 
 }
 /*Responsive breakpoints */
 /* Extra Small devices (portrait phones, less than 576px) */
