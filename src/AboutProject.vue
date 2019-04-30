@@ -9,7 +9,6 @@
       <p>To analyze my project for user accessibility, I checked it with <a href="https://wave.webaim.org/" target="_blank">WAVE</a> by using their URL Dinolytics feature.</p>
       <p>Fun Translations API is public and imposes a ratelimit of 60 calls per day with a distribution of 5 per hour</p>
       <p>The Github repo for the code to my project is located on my <a href="https://github.com/DerekJB1987/wats4030-capstone" target="_blank">Github account</a></p>
-      <p>All credit for the main header image in my project goes to <a href="https://github.com/dfoong" target="_blank">Debbie Shu Yi Foong</a> a fellow classmate in the program and Photoshop Jedi Master.</p>
   </div>
 </template>
 
